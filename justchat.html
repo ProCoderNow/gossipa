@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </header>
+    <style>
+    input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+    </style>
+    <body>
+        <button>Login</button>
+        <img src="justchat.png", alt="Just Chat Welcomes You">
+        <div>
+            <form action="/action_page.php" target="_blank" method="post">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="country">Language</label>
+              <select id="country" name="country">
+                <option value="english">English</option>
+                <option value="hindi">Hindi</option>
+                <option value="chinese">Chinese</option>
+                <option value="spanish">Spanish</option>
+              </select>
+
+              <label for="lname">Email</label>
+              <input type="text" id="email" name="email" placeholder="person@mail.com for example">
+
+              <label for="lname">Phone Number</label>
+              <input type="text" id="number" name="number" placeholder="Not Necessary">
+
+              <label for="country">Gender</label>
+              <select id="country" name="country">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="unknown">I'd rather not say</option>
+              </select>
+              <div class="center">
+                <div id="captchaBackground">
+                <canvas id="captcha">captcha text</canvas>
+                <input id="textBox" type="text" name="text">
+                <div id="buttons">
+                <input id="submitButton" type="submit">
+                <button id="refreshButton" type="submit">Refresh</button>
+                </div>
+                <span id="output"></span>
+                </div>
+                </div>
+            
+             
+            </form>
+          </div>
+        <div id="cookies">
+            <div class="container">
+                <div class="subcontainer">
+                    <div class="cookies">
+                        <p>This website uses cookies in order to improve user experience.
+                        <a href=""> More Info</a></p>
+                        <button id="cookies-btn">I understand</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
